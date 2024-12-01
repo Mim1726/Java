@@ -28,6 +28,23 @@ class solution{
             }
             System.out.println();
         }
+        
+        int v2[][]=new int[4][];
+        for(int i=0;i<4;i++){
+            v2[i]=new int[i+6];
+            for(int j=0;j<5;j++){
+                v2[i][j]=i*j;
+            }
+        }
+        System.out.println();
+        System.out.println("\n**********************");
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 5; j++) {
+                if(j!=0) System.out.print(" ");
+                System.out.print(v1[i][j]);
+            }
+            System.out.println();
+        }
     }    
     
 }
