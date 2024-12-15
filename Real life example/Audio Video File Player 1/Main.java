@@ -84,7 +84,7 @@ class VideoPlayer{
             print(cd, "MX Player");
         }
         else{
-            System.out.println("You have not entered a valid input.");
+            System.out.println("\nYou have not entered a valid input.");
         }
     }
 }
@@ -149,7 +149,7 @@ public class Main{
                 int choice=sc.nextInt();
 
                 if(choice<1 || choice>add.cnt){
-                    System.out.println("Invalid choice.");
+                    System.out.println("\nInvalid choice.");
                 }
                 else{
                     ctrl.select(add.cd[choice-1]);
