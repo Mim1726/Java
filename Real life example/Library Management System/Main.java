@@ -6,6 +6,7 @@ types of users and books. The system should allow operations like borrowing, ret
 displaying book details based on the type of user.
 Requirements:
 1. Users:
+---------
 There are two types of users in the system:
 ● Student: Can borrow up to 3 books at a time.
 ● Faculty: Can borrow up to 10 books at a time.
@@ -15,6 +16,7 @@ Create a common User interface that defines the following methods:
 ● getBorrowedBooks(): Returns a list of currently borrowed books.
 Both Student and Faculty should implement this interface, with specific borrowing limits for each.
 2. Books:
+---------
 There are two types of books in the library:
 ● PrintedBook: Requires a physical copy to be borrowed.
 ● EBook: Can be borrowed digitally without limits on the library stock.
@@ -25,7 +27,9 @@ Create an abstract Book class that defines the common properties of a book:
 borrowed.
 Include an abstract method:
 ● getDetails(): Prints details of the book.
-Implement two subclasses: PrintedBook and EBook, each with specific details and behaviors.3. Library Operations:
+Implement two subclasses: PrintedBook and EBook, each with specific details and behaviors.
+3. Library Operations:
+----------------------
 ● Use polymorphism to allow both Student and Faculty users to borrow either type of book
 through the same interface.
 ● If a Student tries to borrow more than 3 books or a Faculty tries to borrow more than 10
@@ -33,9 +37,11 @@ books, the system should reject the request with an appropriate message.
 ● For PrintedBook, check availability before allowing borrowing. For EBook, no availability
 check is needed.
 4. Display Book Details:
+------------------------
 ● Use a method displayBookDetails(Book book) to display book information, taking
 advantage of polymorphism to show specific details for either PrintedBook or EBook.
 5. Implementation Notes:
+------------------------
 ● Demonstrate the use of inheritance for PrintedBook and EBook.
 ● Use interfaces for user behavior.
 ● Use polymorphism to handle different user types and book types seamlessly.
