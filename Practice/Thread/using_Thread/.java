@@ -11,6 +11,7 @@ public class Main{
         t1.start();
     }
 }
+
 /*
 output:
 "Thread is running: Thread-0"
