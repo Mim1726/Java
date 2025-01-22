@@ -4,6 +4,7 @@ public class Main{
         int row, col1, col2;
         int[][] A, B, C;
 
+        //matris multiplication using thread
         MatrixThread(int m, int n, int p, int[][] A, int[][] B, int[][] C){
             this.row=m;
             this.col1=n;
